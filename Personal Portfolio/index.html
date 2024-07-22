@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a73d1d421c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Navigation-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Priyanshu</span><br> Khambalkar From India</h1>
+            </div>
+        </div>
+    </div>
+
+<!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Enthusiastic and motivated IT student with a strong passion for technology and a solid foundation in key IT concepts. Seeking an opportunity to leverage my technical skills and drive for continuous learning in a professional IT environment.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br>HTML, CSS, JAVA, PYTHON, Android, SQL, PHP,C/C++</li>
+                            <li><span>Tool </span><br>Pycharm, Visual Stdio Code, Android Stduio</li>
+                            <li><span>Soft Skills</span><br>Enthusian, Optimism, Communication, Teamwork, Critical Thinking, Leadership, Creativity</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>2024 - current</span><br>Web development internship at CODSOFT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sept 2023 - May 2026</span><br>B-tech in computer science and engineering at GLS University</li>
+                            <li><span>Aug 2020- June 2023</span><br>Diploma in computer Engineering at Government Polytecnic, Gandhinagar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web developer</h2>
+                <p>web developer with a strong background in creating dynamic, user-friendly websites and applications. Proficient in HTML, CSS, JavaScript, and various modern frameworks such as React and Angular. Adept at collaborating with design and development teams to deliver high-quality projects on time. Skilled in both front-end and back-end development, with a focus on responsive design, performance optimization, and user experience. Strong problem-solving abilities and a commitment to continuous learning in the ever-evolving tech landscape.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>Web design</h2>
+                <p>Creative and detail-oriented web designer with a passion for crafting visually appealing and user-friendly websites. Proficient in design tools such as Adobe Creative Suite (Photoshop, Illustrator) and experienced in HTML, CSS, and basic JavaScript. Skilled in creating responsive designs that adapt seamlessly across various devices and browsers.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--My Works-->
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" >
+                <div class="layer">
+                    <h3>Soul Food</h3>
+                    <p>Designed an engaging user interface for a restaurant’s website, showcasing distinct sections like highlights, ambiance, and menu.
+                        Utilized diverse HTML and CSS components to create interactive modules.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png" >
+                <div class="layer">
+                    <h3>Memory Game</h3>
+                    <p>Developed a fun and engaging memory card game to showcase the human memory’s capabilities. Leveraging diverse HTML and
+                        CSS components to create an engaging user interface and Implemented game logic to handle card flipping, matching.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png" >
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>Developed a fun and engaging tic-tac-toe game to showcase the strategic thinking and decision-making of human beings.
+                        Leveraging diverse HTML and CSS components to create a responsive game board and implemented game logic to handle player
+                        turns</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titles">Contact Me</h1>
+                <p><i class="fa-solid fa-at"></i>priyanshu@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 123456789</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></i></a>
+                </div>
+                <a href="images/My Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="'submit-to-google-sheet'">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">
+                    
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Priyanshu Khambalkar.</p>
+    </div>
+</div>
+
+<!--Script-->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxF5OizGHnejfMwdroYTpaBsZLn1nOCE9N5KcAWOjyWR-jbxSwj6PBVgtHTE5IKIJRhWA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Scuccessfully"
+                setTimeout(function(){
+                    msg.innerHTML
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
