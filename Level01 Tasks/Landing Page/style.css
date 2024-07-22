@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    padding: 10px 10%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+#header{
+    width: 100%;
+    height: 100vh;
+    
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav {
+    width: 100% ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 100px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+
+}
+.content .btn{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background: transparent;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn:hover{
+    background: #fff;
+    box-shadow: 0 0 25px #fff;
+    color: black;
+}
+
+
+.back-video{   
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*slogan*/
+.slogan{
+    text-align: center;
+}
+.slogan h1{
+    font-size: 80px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    background: black;
+}
+
+/*about*/
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    background-image: linear-gradient(rgba(0,0,0,0.5),black),url(images/car.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis: 35%;
+}
+.col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.col-2{
+    flex-basis: 60%;
+}
+.title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.col-2 p{
+    font-size: 20px;
+    font-family: cursive;
+    color: #fff;
+}
+
+/*Brands Slide bar*/
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.brand-logo{
+    background: linear-gradient(145deg, rgb(255, 255, 255), rgba(0, 0, 0, 0.964), rgb(75, 75, 75));
+    overflow: hidden;
+    white-space: nowrap;
+}
+.logo-slide{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+.logo-slide img{
+    height: 80px;
+    margin: 0 40px;
+}
+
+/*Servives*/
+#services{
+    padding: 50px 0;
+    background: linear-gradient(rgba(0,0,0,0.5),black),url(images/car3.png);
+    width: 100%;
+    height: 121vh;
+    background-size: cover;
+    background-position: center;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),grey);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0, 40px;
+    text-align: center;
+    color: #fff;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+/*Contact*/
+#contact{
+    background: linear-gradient(145deg, rgb(255, 255, 255), rgba(0, 0, 0, 0.974), rgb(72, 72, 72));
+}
+.sub{
+    color: black;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: black;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top: 30px;
+}
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: black;
+    display: inline-block;
+    transition: tranform 0.5s;
+}
+.social-icon a:hover{
+    color: #fff;
+    transform: translateY(-5px);
+}
+.btn2{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: linear-gradient(145deg,aqua,pink);
+    color: black;
+    
+}
+.btn2:hover{
+    background: linear-gradient(145deg, aqua,blue);
+    box-shadow: 0 0 25px #fff;
+    color: black;
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    
+    width: 100%;
+    border: 2px solid black;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/*copyright*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: black;
+    font-weight: 300;
+    color: #fff;
+}
